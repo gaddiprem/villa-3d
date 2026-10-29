@@ -14,7 +14,7 @@ button:disabled{opacity:.6}
 <button id="go">Open</button><div id="msg" role="status"></div></form>
 <script type="module">
 // Decrypts the manifest, then fetches and decrypts only the files not already in Cache Storage (sw.js serves them under v/).
-const MAN='m-206231b1800b.bin', msg=document.getElementById('msg'), go=document.getElementById('go');
+const MAN='m-cccb7f03f650.bin', msg=document.getElementById('msg'), go=document.getElementById('go');
 const view=()=>location.replace('v/villa_3d.html'), mark=new URL('v/.manifest',location).href;
 let cache;
 if(!('serviceWorker' in navigator)||!self.caches)msg.textContent='This browser cannot open it. Open the link in Chrome or Safari.';
