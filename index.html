@@ -15,7 +15,7 @@ button:disabled{opacity:.6}
 <script type="module">
 // Decrypts the manifest, then fetches and decrypts only the files not already in Cache Storage (sw.js serves them under v/).
 // The key is kept in IndexedDB on this device, so later updates load without asking for the password again.
-const MAN='m-b7949af3332d.bin', msg=document.getElementById('msg'), form=document.getElementById('f'), go=document.getElementById('go');
+const MAN='m-5488dda1a2fb.bin', msg=document.getElementById('msg'), form=document.getElementById('f'), go=document.getElementById('go');
 const view=()=>location.replace('v/villa_3d.html'), mark=new URL('v/.manifest',location).href;
 const idb=(mode,fn)=>new Promise((ok,no)=>{const r=indexedDB.open('villa',1);r.onupgradeneeded=()=>r.result.createObjectStore('k');
   r.onerror=()=>no(r.error);r.onsuccess=()=>{const q=fn(r.result.transaction('k',mode).objectStore('k'));q.onsuccess=()=>ok(q.result);q.onerror=()=>no(q.error)}});
